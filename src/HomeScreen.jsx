@@ -8,6 +8,7 @@ function HomeScreen() {
        <Nav/>
     {/*  <Banner/>
       <Row/> */}
+      <div style={{height:'2000px' , width:'500px' , backgroundColor:'gray'}} ></div>
     </div>
   );
 }
