@@ -39,11 +39,14 @@
   margin-bottom: 30px;
 }
 .loginScreen_body {
-  margin: auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   color: white;
-  top: 28%;
-  background-color: rgba(0, 0, 0, 0.3);
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   z-index: 1;
   padding: 20px;
@@ -57,10 +60,9 @@
   width: 30%;
   border: none;
   max-width: 600px;
+  margin-right:2px;
 }
-.loginScreen_input{
-    margin: 20px;
-}
+
 
 .loginScreen_getStarted {
   padding:16px 20px;
