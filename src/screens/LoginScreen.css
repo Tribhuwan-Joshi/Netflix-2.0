@@ -1,0 +1,30 @@
+
+
+.loginScreen{
+    position: relative;   
+}
+
+.loginScreen_gradient{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0 , rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+.loginScreen_logo{
+    position: fixed;
+    left: 0;
+    width: 150px;
+}
+.signIn_btn{
+    position: fixed;
+    right:20px;
+    top:20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color:white;
+    background-color: #e50914;
+    font-weight: 600;
+    border:none;
+    cursor: pointer;
+
+
+}
