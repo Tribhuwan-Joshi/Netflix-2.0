@@ -5,17 +5,18 @@ import requests from "./Requests";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
+
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(requests.fetchNetFlixOriginals);
-      const data = request.data.results.filter(
-        (d) => Boolean(d) && d.backdrop_path
-      );
-      setMovie(
-        data[
-          Math.floor(Math.random() * request.data.results.length - 1)
-        ]
-      );
+      let cur;
+      do {
+        cur =
+          request.data.results[
+            Math.floor(Math.random() * request.data.results.length)
+          ];
+      } while (!cur && !cur.backdrop_path);
+      setMovie(cur);
       return request;
     }
     fetchData();
@@ -42,7 +43,9 @@ function Banner() {
           <button className="banner_button">My List</button>
         </div>
         <h1 className="banner_description">
-          {movie.overview ? trunctate(movie.overview, 200) : "A NETLIX ORIGINAL"}
+          {movie.overview
+            ? trunctate(movie.overview, 200)
+            : "A NETLIX ORIGINAL"}
         </h1>
       </div>
       <div className="banner-fadeBottom" />
