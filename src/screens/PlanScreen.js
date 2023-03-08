@@ -12,9 +12,12 @@ setProducts(products.map(p => {
     if(p.isSubscribed) return {...p , isSubscribed:false}
     return p;
 }))
-  }
+  };
+
+
   return (
     <div className="planScreen">
+      <h3 style={{ borderBottom: '1px solid #282c2d', paddingBottom:'5px'}}>Plans - {products.filter(p=>p.isSubscribed===true).map(p=>p.name).length ?products.filter(p=>p.isSubscribed===true).map(p=>p.name)  : "No Plan"}</h3>
       {products.map((p) => {
         return (
           <div key={p.id} className="planScreen_plan">

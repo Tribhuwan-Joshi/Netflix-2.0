@@ -7,7 +7,7 @@
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.5) 60%,
     rgba(0, 0, 0, 0.8) 100%
   );
   /* background-color: rgba(0, 0, 0, 0.4); */
@@ -15,7 +15,7 @@
 .loginScreen_logo {
   position: fixed;
   left: 0;
-  width: 150px;
+  width: 180px;
 }
 .signIn_btn {
   position: fixed;
