@@ -8,8 +8,11 @@ function Banner() {
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(requests.fetchNetFlixOriginals);
+      const data = request.data.results.filter(
+        (d) => Boolean(d) && d.backdrop_path
+      );
       setMovie(
-        request.data.results[
+        data[
           Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
