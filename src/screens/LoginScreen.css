@@ -45,14 +45,16 @@
   margin-right: auto;
   position: absolute;
   color: white;
-  top: 10%;
+  top: 25%;
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   z-index: 1;
   padding: 20px;
 }
 
-
+.loginScreen_input{
+margin-top: 10px;
+}
 .loginScreen_input > form > input {
   padding: 10px;
   outline-width: 0;
@@ -61,6 +63,7 @@
   border: none;
   max-width: 600px;
   margin-right:2px;
+  
 }
 
 

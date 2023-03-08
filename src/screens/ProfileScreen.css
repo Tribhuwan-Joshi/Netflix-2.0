@@ -29,12 +29,16 @@
     flex:1;
 }
 .profileScreen_details > h2 {
-    background-color: gray;
+    background-color: rgb(95, 93, 93);
     padding: 15px;
-    font-size: 15px;
+    font-size: 16px;
     padding-left: 20px;
 }
-
+.profileScreen_body > h1{
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #282c2d;
+}
 
 .profileScreen_info > img{
     height: 100px;
