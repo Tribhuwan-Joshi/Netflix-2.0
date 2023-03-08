@@ -8,11 +8,12 @@ function App() {
   return (
     <div className="app">
       <Router>
+        
         {!user ? (
           <LoginScreen />
         ) : (
           <Routes>
-            <Route path="/" element={<HomeScreen />} />
+            <Route default path="/" element={<HomeScreen />} />
           </Routes>
         )}
       </Router>
