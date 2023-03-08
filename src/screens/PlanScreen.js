@@ -9,6 +9,7 @@ function PlanScreen() {
   function handleClick(id){
 setProducts(products.map(p => {
     if(p.id===id) return {...p ,isSubscribed:!p.isSubscribed };
+    if(p.isSubscribed) return {...p , isSubscribed:false}
     return p;
 }))
   }
@@ -25,7 +26,7 @@ setProducts(products.map(p => {
               onClick={() => handleClick(p.id)}
               style={{ backgroundColor: p.isSubscribed ? "gray" : "#e50914" }}
             >
-              {p.isSubscribed ? "Unsubscribe" : "Subscribe"}
+              {p.isSubscribed ? "Current Package" : "Subscribe"}
             </button>
           </div>
         );
