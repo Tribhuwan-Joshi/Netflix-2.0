@@ -54,6 +54,17 @@
     font-weight: 600;
     cursor: pointer;
 }
+.profileScreen_donate {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 1%;
+    width: 100%;
+    color:white;
+    background-color: #61b729;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
 .profileScreen_plans{
     margin-top: 20px;
 }

@@ -21,13 +21,22 @@ function ProfileScreen() {
           <div className="profileScreen_details">
             <h2>{user.email}</h2>
             <div className="profileScreen_plans">
-              
-              <PlanScreen/>
+              <PlanScreen />
               <button
                 onClick={() => signOut(auth)}
                 className="profileScreen_signOut"
               >
                 Sign Out
+              </button>
+              <button className="profileScreen_donate">
+                <a
+                  href="https://www.buymeacoffee.com/tjsm"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Support Tjsm
+                </a>
               </button>
             </div>
           </div>
